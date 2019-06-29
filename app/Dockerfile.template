@@ -1,0 +1,19 @@
+# base-image for node on any machine using a template variable,
+# see more about dockerfile templates here: https://www.balena.io/docs/learn/develop/dockerfile/#dockerfile-templates
+# and about balena base images here: https://www.balena.io/docs/reference/base-images/base-images/
+FROM balenalib/%%BALENA_MACHINE_NAME%%-node:10-stretch-run
+
+# use `install_packages` if you need to install dependencies,
+# for instance if you need git, just uncomment the line below.
+# RUN install_packages git
+
+# Defines our working directory in container
+WORKDIR /usr/src/app
+COPY . ./
+
+# This install npm dependencies on the balena build server,
+# making sure to clean up the artifacts it creates in order to reduce the image size.
+RUN JOBS=MAX npm install --production && npm cache verify && rm -rf /tmp/*
+
+# server.js will run when container starts up on the device
+CMD ["node", "app.js"]
