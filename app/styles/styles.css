@@ -1,0 +1,36 @@
+* {
+    border-radius: 0 !important;
+}
+
+.bg-image {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+    
+.bg-dark {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(100, 100, 100, 0.8) !important;
+}
+
+.card {
+    background-color: rgba(200, 200, 200, 0.6) !important;
+    box-shadow: 5px 5px 10px rgba(30, 30, 30, 0.5);
+    margin-bottom: 20px !important;
+}
+
+.card-header {
+    background-color: rgba(180, 180, 180, 0.8) !important;
+}
+
+div.card-header > span {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+div.card-header > b {
+    color: #444;
+}

@@ -42,7 +42,7 @@ function logArrayElements(element, index, array) {
 
     // appending each repo
     $.append($.select('.uptime-grid'), `
-        <div class="card bg-secondary">
+        <div class="card">
             <div class="card-header">
                 <b>${element.friendly_name}</b>
                 ${status}

@@ -44,6 +44,8 @@ app.use('/', express.static(__dirname + '/public'));
 app.use('/static/display.js', express.static(__dirname + '/node_modules/display.js/dist/display.min.js'));
 app.use('/static/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist'));
 app.use('/static/scripts', express.static(__dirname + '/scripts'));
+app.use('/static/styles', express.static(__dirname + '/styles'));
+app.use('/static/images', express.static(__dirname + '/images'));
 app.use('/static/info', express.static(__dirname + '/package.json'));
 app.get('*', (req, res) => {
     res.sendFile(`${__dirname}/public/index.html`);

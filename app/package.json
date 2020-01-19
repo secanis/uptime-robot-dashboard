@@ -1,6 +1,6 @@
 {
   "name": "home-dashboard",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "app.js",
   "scripts": {
@@ -11,13 +11,13 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.4.1",
     "display.js": "^2.3.0",
     "express": "^4.17.1",
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^2.0.2"
   },
   "engines": {
     "node": ">=10.0.0"
