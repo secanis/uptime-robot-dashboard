@@ -1,4 +1,4 @@
-FROM petrosagg/balena-wpe:raspberrypi3-968d2af
+FROM marhoy/balena-wpe:2.26.2-raspberrypi3
 
 COPY wpe-init /wpe-init
 RUN chmod +x /wpe-init
