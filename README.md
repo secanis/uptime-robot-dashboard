@@ -46,6 +46,10 @@ For working properly you have to set the following two ENV variables on the Bale
 
     NODE_ENV=production
     UPTIME_ROBOT_API_KEY={yourUptimeRobotAPIKey}
+    
+### Fleet / Device Configuration
+
+I set the `Define device GPU memory in megabytes` config in the Balena Cloud UI to 128MB to increase GPU performance.
 
 ## Credits
 
