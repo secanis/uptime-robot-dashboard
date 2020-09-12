@@ -14,7 +14,7 @@
     "bootstrap": "^4.4.1",
     "display.js": "^2.3.0",
     "express": "^4.17.1",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
