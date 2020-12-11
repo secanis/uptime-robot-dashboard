@@ -6,7 +6,7 @@ You can create there an account for free and access on the the data by the REST 
 This project uses the [Balena Cloud](https://www.balena.io/cloud) to deploy this stuff on a raspberry.
 But you can also use the app-part standalone as a normal Node application.
 
-![dashboard screenshot](./app/public/screenshot.png)
+![dashboard screenshot](./docs/images/screenshot.png)
 
 ## Setup / Development for the Node app (dashboard)
 
@@ -46,19 +46,19 @@ For working properly you have to set the following two ENV variables on the Bale
 
     NODE_ENV=production
     UPTIME_ROBOT_API_KEY={yourUptimeRobotAPIKey}
-    
+
 ### Fleet / Device Configuration
 
 I set the `Define device GPU memory in megabytes` config in the Balena Cloud UI to 128MB to increase GPU performance.
 
 ## Credits
 
-- [Raspberry Pi](https://www.raspberrypi.org/)
-- [Balena Cloud](https://www.balena.io/)
-- [UptimeRobot](https://uptimerobot.com/)
+-   [Raspberry Pi](https://www.raspberrypi.org/)
+-   [Balena Cloud](https://www.balena.io/)
+-   [UptimeRobot](https://uptimerobot.com/)
 
 For the dashboard:
 
-- [DisplayJS](https://display.js.org/)
-- [Bootstrap](https://getbootstrap.com/)
-- and much more... hava a look in the packge.json
+-   [DisplayJS](https://display.js.org/)
+-   [Bootstrap](https://getbootstrap.com/)
+-   and much more... hava a look in the packge.json

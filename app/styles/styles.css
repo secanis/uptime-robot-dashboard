@@ -3,20 +3,20 @@
 }
 
 .bg-image {
-    background-image: url('../images/background.jpg');
+    background-image: url("../images/background.jpg");
     background-size: cover;
     height: 100vh;
     width: 100vw;
 }
-    
+
 .bg-dark {
     height: 100vh;
     width: 100vw;
-    background-color: rgba(100, 100, 100, 0.8) !important;
+    background-color: rgba(100, 100, 100, 0.85) !important;
 }
 
 .card {
-    background-color: rgba(200, 200, 200, 0.6) !important;
+    background-color: rgba(200, 200, 200, 0.5) !important;
     box-shadow: 5px 5px 10px rgba(30, 30, 30, 0.5);
     margin-bottom: 20px !important;
 }
