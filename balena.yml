@@ -12,7 +12,7 @@ data:
     applicationEnvironmentVariables:
         - NODE_ENV: "production"
         - UPTIME_ROBOT_API_KEY: "{yourUptimeRobotAPIKey}"
-    defaultDeviceType: "raspberry-pi3"
+    defaultDeviceType: "raspberrypi3"
     supportedDeviceTypes:
         - "raspberrypi3"
         - "raspberrypi4-64"
