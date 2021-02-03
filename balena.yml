@@ -1,18 +1,22 @@
-version: "2"
-slug: "uptime-robot-dashboard"
 name: "UptimeRobot Dashboard"
 type: "sw.application"
+description: "This dashboard was created based on the Uptime Robot Service. You can create there an account for free and access on the the data by the REST API."
 assets:
-    - url: "https://github.com/secanis/uptime-robot-dashboard"
-      name: "repository"
-    - url: "https://raw.githubusercontent.com/secanis/uptime-robot-dashboard/master/docs/images/logo.png"
-      name: "logo"
+  repository:
+    type: "blob.asset"
+    data:
+      url: "https://github.com/secanis/uptime-robot-dashboard"
+  logo:
+    type: "blob.asset"
+    data:
+      url: "https://raw.githubusercontent.com/secanis/uptime-robot-dashboard/master/docs/images/logo.png"
 data:
-    description: "This dashboard was created based on the Uptime Robot Service. You can create there an account for free and access on the the data by the REST API."
-    applicationEnvironmentVariables:
-        - NODE_ENV: "production"
-        - UPTIME_ROBOT_API_KEY: "{yourUptimeRobotAPIKey}"
-    defaultDeviceType: "raspberrypi3"
-    supportedDeviceTypes:
-        - "raspberrypi3"
-        - "raspberrypi4-64"
+  applicationEnvironmentVariables:
+    - NODE_ENV: "production"
+    - UPTIME_ROBOT_API_KEY: "{yourUptimeRobotAPIKey}"
+  defaultDeviceType: "raspberrypi3"
+  supportedDeviceTypes:
+    - "raspberrypi3"
+    - "raspberrypi4-64"
+    - "fincm3"
+
